@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+function poly(str){
+    var back,fwd;
+    for(var i=0;i<str.length;i++) {
+        back = str[(str.length - 1)-i];
+        fwd = str[i];
+        if(back != fwd)
+        return false;
+    }
+return true;
+}
+if(poly("malayalam"))
+document.write("Word is palindrome");
+else
+document.write("Word is not palindrome");
+
+</script>
+</body>
+</html>

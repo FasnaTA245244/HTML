@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+           function fact(n) {//factorial
+var s = new Stack();
+while (n > 1) {
+s.push(n--);
+}
+var product = 1;
+while (s.length() > 0) {
+product *= s.pop();
+}
+return product;
+}
+document.write(factorial(5)); // displays 120
+document.write(fact(5)); // displays 120
+</script>
+</body>
+</html>
